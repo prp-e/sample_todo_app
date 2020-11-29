@@ -21,7 +21,7 @@ This project is a full-stack app I decided to make, in order to make a resume fo
 
 _SOME ADOBE XD DESINGS WILL BE HERE_ 
 
-### Phase 3 - Frontend 
+### Phase 4 - Frontend 
 
 1. Mobile app using flutter
 2. Make the app communicate with the API using `http` library for the Dart programming lanugage. 
