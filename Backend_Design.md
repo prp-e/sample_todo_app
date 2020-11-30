@@ -9,8 +9,8 @@
 
 ## API authentication 
 
-1. `/api/token` 
-2. `/api/token/refresh` 
+1. `/api/token` : gives you a refresh token and an access token. 
+2. `/api/token/refresh` : refreshes the access token. 
 
 ## Task Model 
 
