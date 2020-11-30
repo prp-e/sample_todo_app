@@ -77,9 +77,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': os.path.join(BASE_DIR, 'db/config.cnf'),
-        },
+        'NAME' : 'sample_todo' ,
+        'USER' : 'todoapp' ,
+        'PASSWORD' : 'todoapp', 
+        'HOST' : 'localhost', 
+        'PORT' : '3306',
     }
 }
 
