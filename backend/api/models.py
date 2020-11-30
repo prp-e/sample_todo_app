@@ -8,7 +8,7 @@ class TaskModel(models.Model):
     name = models.CharField(max_length=128, blank=False) 
     summary = models.TextField() 
     start_date = models.DateField(default=date.today) 
-    deadline = models.DateField()
+    deadline = models.DateField(blank=False)
 
     def __str__(self):
         return self.name
