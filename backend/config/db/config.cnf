@@ -1,0 +1,5 @@
+[client]
+database = sample_todo
+user = todoapp
+password = todoapp
+default-character-set = utf8
