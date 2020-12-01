@@ -9,7 +9,7 @@ class TaskModel(models.Model):
     summary = models.TextField() 
     start_date = models.DateField(default=date.today) 
     deadline = models.DateField(blank=False)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
