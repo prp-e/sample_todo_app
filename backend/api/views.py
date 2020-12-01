@@ -6,7 +6,7 @@ from .serializers import UserSerializer, TaskSerializer
 # Create your views here.
 
 class TaskView(viewsets.ModelViewSet): 
-    queryset = TaskModel.objects.filter(user_id = request.user.id )
+    queryset = TaskModel.objects.all()
     serializer_class = TaskSerializer 
     permission_classes = [permissions.IsAuthenticated] 
 
