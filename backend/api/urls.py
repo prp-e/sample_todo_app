@@ -7,5 +7,7 @@ router.register('tasks', views.TaskView)
 router.register('users', views.UserView)
 
 urlpatterns = [
-    path('v1/', include(router.urls))
+    path('v1/', include(router.urls)),
+    path('token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]
