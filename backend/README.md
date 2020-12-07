@@ -3,5 +3,5 @@
 ## TODO 
 - [x] Making JWT authentication 
 - [ ] Returning user id to the endpoint 
-- [ ] Returning user-specific tasks on demand 
+- [x] Returning user-specific tasks on demand - Needs improvement
 - [ ] Custom timeout for tokens
