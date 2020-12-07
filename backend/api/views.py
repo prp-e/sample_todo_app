@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets, permissions 
+from .permissions import IsAssigned
 from .models import TaskModel 
 from django.contrib.auth.models import User 
 from .serializers import UserSerializer, TaskSerializer
@@ -8,7 +9,7 @@ from .serializers import UserSerializer, TaskSerializer
 class TaskView(viewsets.ModelViewSet):  
     queryset = TaskModel.objects.all()
     serializer_class = TaskSerializer 
-    permission_classes = [permissions.IsAuthenticated] 
+    permission_classes = [IsAssigned] 
 
 class UserView(viewsets.ModelViewSet): 
     queryset = User.objects.all() 
