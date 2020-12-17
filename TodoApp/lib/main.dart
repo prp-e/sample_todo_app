@@ -42,7 +42,15 @@ class _LoginPage extends State<LoginState> {
               controller: passwordController,
             ),
             FlatButton(
-              onPressed: null,
+              onPressed: () {
+                return showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        content: Text("Username: " + usernamController.text),
+                      );
+                    });
+              },
               child: Text("Login"),
               color: Colors.blue[400],
             )
