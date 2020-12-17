@@ -25,18 +25,27 @@ class LoginState extends StatefulWidget {
 class _LoginPage extends State<LoginState> {
   @override
   Widget build(BuildContext context) {
+    final usernamController = TextEditingController();
+    final passwordController = TextEditingController();
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("Username: "),
-            TextField(),
+            TextField(
+              controller: usernamController,
+            ),
             Text("Password: "),
             TextField(
               obscureText: true,
+              controller: passwordController,
             ),
-            FlatButton(onPressed: null, child: Text("Login"))
+            FlatButton(
+              onPressed: null,
+              child: Text("Login"),
+              color: Colors.blue[400],
+            )
           ],
         ),
       ),
