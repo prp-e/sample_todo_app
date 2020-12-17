@@ -33,7 +33,9 @@ class _LoginPage extends State<LoginState> {
             Text("Username: "),
             TextField(),
             Text("Password: "),
-            TextField(),
+            TextField(
+              obscureText: true,
+            ),
             FlatButton(onPressed: null, child: Text("Login"))
           ],
         ),
