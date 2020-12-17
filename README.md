@@ -26,7 +26,8 @@ This project is a full-stack app I decided to make, in order to make a resume fo
 
 ### Phase 3 - UI Design 
 
-_SOME ADOBE XD DESINGS WILL BE HERE_ 
+![Login Screen](ui_design/Login.png)
+![Tasks List](ui_design/TaskList.png)
 
 ### Phase 4 - Frontend 
 
