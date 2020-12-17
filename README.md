@@ -8,7 +8,7 @@ This project is a full-stack app I decided to make, in order to make a resume fo
 
 - [x] Phase 1
 - [x] Phase 2 
-- [ ] Phase 3
+- [x] Phase 3
 - [ ] Phase 4
  
 ### Phase 1 - Basic Designs of the app 
